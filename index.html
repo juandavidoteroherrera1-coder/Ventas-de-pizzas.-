@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pizzería Bella Napoli: menú completo, horarios y ubicación.">
+  <title>Bella Napoli | Pizzería artesanal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="encabezado" id="inicio">
+    <div class="barra">
+      <a class="logo" href="#inicio" aria-label="Bella Napoli, inicio">
+        <span class="logo-icono" aria-hidden="true">🍕</span>
+        <span>Bella <strong>Napoli</strong></span>
+      </a>
+
+      <button class="hamburguesa" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="navegacion">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navegacion" id="navegacion" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="portada">
+      <div class="portada-texto">
+        <p class="etiqueta">Pizzería familiar desde 1998</p>
+        <h1>Sabor de Nápoles, hecho a mano en tu barrio.</h1>
+        <p class="eslogan">Masa fermentada 48 horas, horno de leña y mucho cariño en cada porción.</p>
+        <a class="boton" href="#menu">Ver el menú</a>
+      </div>
+      <div class="hero-img">
+  <img src="portada.jpg" alt="Pizza artesanal de Bella Napoli">
+</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="seccion" id="menu">
+      <div class="contenedor">
+        <h2>Nuestro menú</h2>
+        <p class="intro">Todo se prepara al momento con ingredientes frescos.</p>
+
+        <h3 class="categoria">Pizzas</h3>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <div class="foto"><span aria-hidden="true">🍕</span><img src="margarita.jpg" alt="Pizza Margarita" onerror="this.remove()"></div>
+            <div class="info">
+              <h4>Margarita</h4>
+              <p>Salsa de tomate, mozzarella fresca y albahaca.</p>
+              <p class="precio">$32.000</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <div class="foto"><span aria-hidden="true">🍕</span><img src="pepperoni.jpg" alt="Pizza Pepperoni" onerror="this.remove()"></div>
+            <div class="info">
+              <h4>Pepperoni</h4>
+              <p>Mozzarella y abundante pepperoni crocante.</p>
+              <p class="precio">$38.000</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <div class="foto"><span aria-hidden="true">🍕</span><img src="cuatro-quesos.jpg" alt="Pizza Cuatro Quesos" onerror="this.remove()"></div>
+            <div class="info">
+              <h4>Cuatro Quesos</h4>
+              <p>Mozzarella, parmesano, gorgonzola y provolone.</p>
+              <p class="precio">$42.000</p>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="categoria">Entradas</h3>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <div class="foto"><span aria-hidden="true">🧄</span><img src="pan-ajo.jpg" alt="Pan de ajo" onerror="this.remove()"></div>
+            <div class="info">
+              <h4>Pan de ajo</h4>
+              <p>Pan artesanal con mantequilla de ajo y queso gratinado.</p>
+              <p class="precio">$14.000</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <div class="foto"><span aria-hidden="true">🥗</span><img src="ensalada-caprese.jpg" alt="Ensalada Caprese" onerror="this.remove()"></div>
+            <div class="info">
+              <h4>Ensalada Caprese</h4>
+              <p>Tomate, mozzarella, albahaca y aceite de oliva.</p>
+              <p class="precio">$18.000</p>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="categoria">Bebidas</h3>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <div class="foto"><span aria-hidden="true">🥤</span><img src="gaseosa.jpg" alt="Gaseosa" onerror="this.remove()"></div>
+            <div class="info">
+              <h4>Gaseosa 400 ml</h4>
+              <p>Cola, limón o naranja, bien fría.</p>
+              <p class="precio">$6.000</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+           <div class="foto"><span aria-hidden="true">🍋</span><img src="limonada.jpg" alt="Limonada" onerror="this.remove()"></div>
+            <div class="info">
+              <h4>Limonada natural</h4>
+              <p>Preparada al momento, con hielo y hierbabuena.</p>
+              <p class="precio">$9.000</p>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="categoria">Postres</h3>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <div class="foto"><span aria-hidden="true">🍰</span><img src="tiramisu.jpg" alt="Tiramisú" onerror="this.remove()"></div>
+            <div class="info">
+              <h4>Tiramisú</h4>
+              <p>Clásico italiano con café, mascarpone y cacao.</p>
+              <p class="precio">$16.000</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <div class="foto"><span aria-hidden="true">🍨</span><img src="helado.jpg" alt="Helado" onerror="this.remove()"></div>
+            <div class="info">
+              <h4>Helado artesanal</h4>
+              <p>Dos bolas a elegir: vainilla, chocolate o fresa.</p>
+              <p class="precio">$11.000</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion crema" id="nosotros">
+      <div class="contenedor dos-columnas">
+        <div>
+          <h2>Nosotros</h2>
+          <p>Bella Napoli nació en 1998 en la cocina de la familia Rossi, cuando doña Lucía empezó a vender pizzas a los vecinos los fines de semana. La receta de la masa viaja de generación en generación y sigue siendo la misma: harina, agua, sal y mucha paciencia.</p>
+          <p>Hoy somos un equipo de familia y amigos que mantiene la tradición napolitana, pero con ingredientes de proveedores locales. Para nosotros, cada cliente es un invitado más a la mesa.</p>
+        </div>
+        <div class="nosotros-foto">
+  <img src="nosotros.jpg" alt="Pizzaiolo de Bella Napoli sacando una pizza del horno">
+</div>
+      </div>
+    </section>
+
+    <section class="seccion" id="contacto">
+      <div class="contenedor">
+        <h2>Contacto</h2>
+        <div class="dos-columnas">
+          <div class="datos">
+  <a class="llamar" href="whatsapp://send?phone=573145395457&text=Hola%20Bella%20Napoli">
+    <span class="llamar-icono" aria-hidden="true">💬</span>
+    <span class="llamar-texto">
+      <small>Pide por WhatsApp</small>
+      <strong>314 539 5457</strong>
+    </span>
+  </a>
+          <div class="dato">
+      <span class="dato-icono" aria-hidden="true">📍</span>
+      <div>
+        <h4>Dirección</h4>
+        <p>Canalete, Córdoba</p>
+      </div>
+    </div>
+
+            <div class="dato">
+              <span class="dato-icono" aria-hidden="true">🕒</span>
+              <div>
+                <h4>Horario de atención</h4>
+                <p>Lunes a jueves: 12:00 m. a 10:00 p. m.</p>
+                <p>Viernes a domingo: 12:00 m. a 11:30 p. m.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mapa">
+  <iframe
+    src="https://www.google.com/maps?q=Canalete,+Córdoba,+Colombia&output=embed"
+    width="100%" height="250" style="border:0;"
+    allowfullscreen loading="lazy"
+    title="Ubicación de Bella Napoli">
+  </iframe>
+</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>© <span id="anio"></span> Bella Napoli. Todos los derechos reservados.</p>
+  </footer>
+
+  <button class="subir" id="btnSubir" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
